@@ -9,7 +9,7 @@ router.use(csrfProtection);
 
 router.get('/logout', isLoggedIn, function (req, res, next) {
     req.logout();
-    res.redirect('/signin');
+    res.redirect('/user/signin');
 });
 
 router.use('/signin', notLoggedIn, function (req, res, next) {

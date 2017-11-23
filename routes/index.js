@@ -7,7 +7,8 @@ router.use(csrfProtection);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('bridge/index', { title: 'QlikT' });
+  res.render('/', {});
+  next();
 });
 
 module.exports = router;
